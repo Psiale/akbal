@@ -1,7 +1,7 @@
 const path = require('path');
 // only uncomment if you run npm run apiKey
 // const Dotenv = require('dotenv-webpack');
-// const PreloadWebpackPlugin = require('preload-webpack-plugin');
+const PreloadWebpackPlugin = require('preload-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 
@@ -27,6 +27,7 @@ module.exports = {
     new HTMLWebpackPlugin({
       title: 'Weather App',
     }),
+    new PreloadWebpackPlugin(),
   ],
   module: {
     rules: [
