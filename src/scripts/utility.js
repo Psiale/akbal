@@ -6,14 +6,15 @@ const htmlElement = (element, elementId, elementClass = '') => {
 };
 
 const iconGenerator = (iconClass) => {
-    const element = document.createElement('p')
-    const icon = document.createElement('i');
-    icon.classList.add('fas');
-    icon.classList.add(iconClass);
-    element.append(icon);
-    return element;
-}
+  const element = document.createElement('p');
+  const icon = document.createElement('i');
+  icon.classList.add('fas');
+  icon.classList.add(iconClass);
+  element.append(icon);
+  return element;
+};
 
 export {
   htmlElement,
-}
+  iconGenerator,
+};
