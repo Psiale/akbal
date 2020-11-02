@@ -1,7 +1,7 @@
 responsividad con 2 queries mobile hasta tablet, y desktop.
 Objects: 
-Therapy = name, description, image, cost, duration
-Consultorios = name, ubicacion
+DONE Therapy = name, description, image, cost, duration
+DONE Consultorios = name, ubicacion
 Articulos = titulo, [imagenes], cuerpo:  [preguntas { pregunta, respuesta}]
 Paginas 
 Home: 
@@ -31,6 +31,6 @@ Pagina de terapia:
     Call to action: agendar cita
 
 Artículos: 
-    Articulo. image
+    Articulo.image
     cuerpo: 
         pregunta, pregunta, imagen, consecuencia, pregunta a la accion, call to action 
